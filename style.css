@@ -1,0 +1,164 @@
+/* GENERAL */
+
+html {
+    font-size: 100%;
+}
+
+body {
+    background-color: #E5F2FD;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Roboto Slab', serif;
+}
+
+h1 {
+    font-size: 4rem;
+    color: #5260FF;
+}
+
+h2 {
+    font-size: 2.5rem;
+}
+
+h3 {
+    font-size: 1.5;
+    color: #993B1E;
+}
+
+p {
+    font-family: 'Ubuntu', sans-serif;
+    line-height: 1.5;
+    word-spacing: 2mm;
+}
+
+a {
+    font-family: 'Roboto Slab', serif;
+    font-size: large;
+    text-decoration: none;
+    color: #5260FF;
+
+}
+
+a:hover {
+    cursor: pointer;
+    text-decoration: underline;
+    transition: color 300ms ease-in;
+    color: #323DB3;
+}
+
+/* HEADER */
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 110px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    background-color: white;
+    border-bottom: 1px solid black ;
+}
+
+/* MAIN */
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    margin-top: 110px;
+    margin-left: 126px;
+    margin-right: 126px;
+    background-color: white;
+    height: auto;
+}
+
+/* SECTION 1 */
+
+#about_me {
+    padding-top: 65px;
+    text-align: center;
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    margin-left: 48px;
+}
+
+#portrait {
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 1;
+}
+
+/* SECTION 2 */
+
+#projects {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    display: flex;
+    flex-direction: column;
+    padding-top: 65px;
+    margin-left: 48px;
+}
+#projects div {
+    display: flex;
+    justify-content: space-around;
+}
+
+.project {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+/* SECTION 3 */
+
+#skills {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 3;
+    margin-left: 48px;
+}
+
+#skills div {
+    display: inline-block;
+    width: 30%;
+}
+
+#skills div h3 {
+    display: inline;
+}
+
+.skillsIMG-html {
+    width: 40px;
+    height: 25px;
+}
+
+.skillsIMG {
+    width: 1.7rem;
+    height: 1.7rem;
+}
+
+
+/* SMALL DIMENSIONS */
+
+@media screen and (max-device-width: 500px) {
+    #about_me {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+
+    #portrait {
+        display: none;
+    }
+}

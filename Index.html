@@ -23,40 +23,46 @@
 
         <main>
             <section id="about_me">
-                <h2>About Me</h2>
-                <p>As of</p><span id="timeNow"></span><p>I'm a hard-working new software engineer, just finished studying and bursting with excitement about the future. I'm passionate about this dynamic and innovative industry, and I'm committed to continuous learning and growth.</p>
+                <h2 style="color: #1A25A4;">About Me</h2>
+                <p>As of</p><span id="timeNow"></span><p>I'm a hard-working software engineer, bursting with excitement about the future. I'm passionate about this dynamic and innovative industry, and I'm committed to continuous learning and growth.</p>
                 <br>
                 <p>As a team player, I'm easy to work with and prioritize clear communication. I'm always open to new ideas and challenges and I'm eager to contribute my skills to the industry. Thank you for considering me as a potential team member!</p>
             </section>
 
             <section id="portrait">
-                <img src="">
+                <img src="./Images/me.jpg">
             </section>
 
             <section id="projects">
-                <h2>Projects</h2>
+                <h2 style="padding-bottom: 20px;">Projects:</h2>
+
                 <div>
+                    <div class="onclick" onclick="expand()" style="width: 100%; text-align: center; border-radius: 10px;"><img class="arrow" src="./Images/down-arrow.png" width="25px" ><h2 style="color: #1A25A4; margin: 0; display: inline;">Site Main page</h2></div>
                     <div class="project">
-                        <h3>Project 1</h3>
-                        <img src="">
-                        <img src="">
-                        <img src="">
-                        <p>Project Description</p>
-                        <p>Made with:</p>
+                        <a><img class="Images" src="./Images/Captură de ecran 2023-04-03 155825.png" width="800"></a>
+                        <div class="buttons">
+                            <button>Visit Site</button>
+                            <button>Git</button>
+                        </div>
+                        <p><strong>Description: </strong>A main page made for a company that rents electrical bikes in different european cities</p>
+                        <p>Made with: <strong>HTML, CSS,</strong> and <strong>JavaScript</strong></p>
                     </div>
+
+                    <div class="onclick" onclick="expand2()" style="width: 100%; text-align: center; border-radius: 10px;"><img class="arrow" src="./Images/down-arrow.png" width="25px" ><h2 style="color: #1A25A4; margin: 0; display: inline;">Promotional Email</h2></div>
                     <div class="project">
-                        <h3>This Website</h3>
-                        <img src="">
-                        <img src="">
-                        <img src="">
-                        <p></p>
+                        <a><img class="Images" src="./Images/Captură de ecran email 162840.png" width="400"></a>
+                        <div class="buttons">
+                            <button>Visit Site</button>
+                            <button>Git</button>
+                        </div>
+                        <p><strong>Description:</strong> A protional email made for Uber, showing new services and offers</p>
                         <p>Made with: <strong>HTML</strong>, <strong>CSS</strong> and <strong>JavaScript</strong></p>
                     </div>
                 </div>
             </section>
 
             <section id="skills">
-                <h2>Skills</h2>
+                <h2>Skills:</h2>
                 <div>
                     <img class="skillsIMG-html" src="./Images/html5.png">
                     <h3>HTML</h3>
@@ -68,6 +74,10 @@
                 <div>
                     <img class="skillsIMG" src="./Images/png-transparent-javalogo-javascript.png">
                     <h3>Javascript</h3>
+                </div>
+                <div>
+                    <img class="skillsIMG" src="./Images/images.png">
+                    <h3>Bash</h3>
                 </div>
             </section>
         </main>

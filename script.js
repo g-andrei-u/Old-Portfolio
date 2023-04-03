@@ -17,3 +17,33 @@ function time() {
     day + " " + month + " " + year + "  " + ("0" + h).substr(-2) + ":" + ("0" + m).substr(-2) + ":" + ("0" + s).substr(-2);
   }
 setInterval(time, 1000);
+
+let state = false
+const projects = document.getElementsByClassName('project');
+const arrow = document.getElementsByClassName('arrow')
+
+const expand = () => {
+  if (state === false) {
+    projects[0].style.display = 'block';
+    arrow[0].style.transform = 'rotate(0.5turn)';
+    state = true
+  }
+  else {
+    projects[0].style.display = 'none'
+    arrow[0].style.transform = 'rotate(0.0turn)';
+    state = false
+  }
+}
+
+const expand2 = () => {
+  if (state === false) {
+    projects[1].style.display = 'block'
+    arrow[1].style.transform = 'rotate(0.5turn)';
+    state = true
+  }
+  else {
+    projects[1].style.display = 'none'
+    arrow[1].style.transform = 'rotate(0.0turn)';
+    state = false
+  }
+}

@@ -70,7 +70,8 @@ header {
     align-items: center;
     text-align: center;
     background-color: #1A25A4;
-    border-bottom: 1px solid black ;
+    border-bottom: 1px solid black;
+    z-index: 1;
 }
 
 nav a {

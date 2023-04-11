@@ -6,7 +6,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&family=Roboto+Slab&family=Ubuntu&display=swap" rel="stylesheet">
-        <meta name="viewport" content="width=device-width, initial-scale=0" />
+        <meta name="viewport" content="width=device-width, initial-scale= 1.0" />
     </head>
 
     <body>
@@ -17,16 +17,22 @@
             <nav>
                 <a href="#projects">Projects</a>
                 <a href="#skills">Skills</a>
-                <a href="./contactMe.html">Contact Me</a>
+                <a href="./ContactMe/contactMe.html">Contact Me</a>
             </nav>
+
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
         </header>
 
         <main>
             <section id="about_me">
                 <h2 style="color: #1A25A4;">About Me</h2>
-                <p>As of</p><span id="timeNow"></span><p>I'm a hard-working software engineer, bursting with excitement about the future. I'm passionate about this dynamic and innovative industry, and I'm committed to continuous learning and growth.</p>
+                <h4 style="color: black;">As of</h4><span id="timeNow"></span><p>I'm a hard-working Front-End Engineer, bursting with excitement about the future. I'm passionate about this dynamic and innovative industry, and I'm committed to continuous learning and growth.</p>
                 <br>
-                <p>As a team player, I'm easy to work with and prioritize clear communication. I'm always open to new ideas and challenges and I'm eager to contribute my skills to the industry. Thank you for considering me as a potential team member!</p>
+                <p>I'm easy to work with and prioritize clear communication. I'm always open to new ideas and challenges and I'm eager to contribute my skills to the industry!</p>
             </section>
 
             <section id="portrait">
@@ -37,47 +43,55 @@
                 <h2 style="padding-bottom: 20px;">Projects:</h2>
 
                 <div>
-                    <div class="onclick" onclick="expand()" style="width: 100%; text-align: center; border-radius: 10px;"><img class="arrow" src="./Images/down-arrow.png" width="25px" ><h2 style="color: #1A25A4; margin: 0; display: inline;">Site Main page</h2></div>
+                    <div class="onclick" onclick="expand()">
+                        <img class="arrow" src="./Images/down-arrow.png" width="25px" >
+                        <h3>Site Main page</h3>
+                    </div>
+
                     <div class="project">
                         <a><img class="Images" src="./Images/Captură de ecran 2023-04-10 020313.png" width="800"></a>
                         <div class="buttons">
                             <button onclick="javascript:window.open('https://g-andrei-u.github.io/Proiect-Ride.Green/','_blank');">Visit Site</button>
                             <button onclick="javascript:window.open('https://github.com/g-andrei-u/Proiect-Ride.Green','_blank');">Git</button>
                         </div>
-                        <p><strong>Description: </strong>A main page made for a company that rents electrical bikes in different european cities</p>
-                        <p>Made with: <strong>HTML, CSS,</strong> and <strong>JavaScript</strong></p>
+                        <p><strong>Description: </strong>A responsive Main Page with interactive features made for a company that rents electrical bikes in different european cities</p>
+                        <p><strong>Made with: HTML, CSS</strong> and <strong>JavaScript</strong></p>
                     </div>
 
-                    <div class="onclick" onclick="expand2()" style="width: 100%; text-align: center; border-radius: 10px;"><img class="arrow" src="./Images/down-arrow.png" width="25px" ><h2 style="color: #1A25A4; margin: 0; display: inline;">Promotional Email</h2></div>
+
+                    <div class="onclick" onclick="expand2()">
+                        <img class="arrow" src="./Images/down-arrow.png" width="25px" >
+                        <h3>Promotional Email</h3>
+                    </div>
+
                     <div class="project">
                         <a><img class="Images" src="./Images/Captură de ecran email 162840.png" width="400"></a>
                         <div class="buttons">
                             <button onclick="javascript:window.open('https://g-andrei-u.github.io/Proiect-Email/','_blank');">Visit Site</button>
                             <button onclick="javascript:window.open('https://github.com/g-andrei-u/Proiect-Email','_blank');">Git</button>
                         </div>
-                        <p><strong>Description:</strong> A protional email made for Uber, showing new services and offers</p>
-                        <p>Made with: <strong>HTML</strong>, <strong>CSS</strong> and <strong>JavaScript</strong></p>
+                        <p><strong>Description:</strong> A responsive promotional email made for Uber, showing new services and offers</p>
+                        <p><strong>Made With: HTML</strong> and <strong>CSS</strong></p>
                     </div>
                 </div>
             </section>
 
             <section id="skills">
                 <h2>Skills:</h2>
-                <div>
-                    <img class="skillsIMG-html" src="./Images/html5.png">
-                    <h3>HTML</h3>
-                </div>
-                <div>
-                    <img class="skillsIMG" src="./Images/CSS3_logo.png">
-                    <h3>CSS</h3>
-                </div>
-                <div>
-                    <img class="skillsIMG" src="./Images/png-transparent-javalogo-javascript.png">
-                    <h3>Javascript</h3>
-                </div>
-                <div>
-                    <img class="skillsIMG" src="./Images/images.png">
-                    <h3>Bash</h3>
+
+                <div class="allSkills">
+                    <div class="skill">
+                        <img class="skillsIMG-html" src="./Images/html5.png"><h4>HTML</h4>
+                    </div>
+                    <div class="skill">
+                        <img class="skillsIMG" src="./Images/CSS3_logo.png"><h4>CSS</h4>
+                    </div>
+                    <div class="skill">
+                        <img class="skillsIMG" src="./Images/png-transparent-javalogo-javascript.png"><h4>Javascript</h4>
+                    </div>
+                    <div class="skill">
+                        <img class="skillsIMG" src="./Images/images.png"><h4>Bash</h4>
+                    </div>
                 </div>
             </section>
         </main>

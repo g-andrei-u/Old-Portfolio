@@ -11,7 +11,8 @@ body {
 h1,
 h2,
 h3,
-h4 {
+h4,
+h5 {
     font-family: 'Roboto Slab', serif;
 }
 
@@ -32,7 +33,13 @@ h3 {
 h4 {
     font-size: 1.5rem;
     margin: 0;
-    color: #993B1E;
+    color: #781111;
+}
+
+h5 {
+    font-size: 1.2rem;
+    margin: 0;
+    color: #1A25A4;
 }
 
 p {
@@ -257,6 +264,7 @@ button:hover {
 .skill {
     display: inline-flex;
     width: auto;
+    margin: 0 5px;
 }
 
 .skill h4 {
@@ -277,7 +285,49 @@ button:hover {
 /* CONTACT SECTION */
 
 #contact {
-    margin-left: 48px;
+    position: absolute;
+    top: 100px;
+    left: 60%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 20%;
+    height: 25vh;
+    background-color: white;
+    border-radius: 25px;
+    border: 2px solid #1A25A4;
+}
+
+#contact.open {
+    display: flex;
+}
+
+#contact:hover {
+    border: 4px solid #1A25A4;
+    transition: border 100ms;
+}
+
+#contact-me-button {
+    font-size: 1.4rem;
+    font-family: 'IBM Plex Sans', sans-serif;
+    padding: 5px;
+    width: 200px;
+    border: 1px solid black;
+    border-radius: 35px;
+    background-color: #781111;
+    margin-bottom: 10px;
+    color: white;
+}
+
+#contact-me-button:hover {
+    cursor: pointer;
+    color: #1A25A4;
+    transition: color 500ms;
+    background-color: white;
+    border: 4px solid #781111;
+    transition: background-color 600ms ease-in;
+    transition: border 100ms;
 }
 
 
@@ -426,6 +476,17 @@ button:hover {
 
     .skill {
         margin-top: 10px;
+    }
+
+    #contact {
+        top: 30vh;
+        left: 30%;
+        width: 45%;
+        height: 35vh;
+    }
+
+    #contact.open {
+        box-shadow: 0 0 0 10000px rgba(0,0,0,.50);
     }
 }
 

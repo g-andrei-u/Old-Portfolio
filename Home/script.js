@@ -1,3 +1,5 @@
+//TIME FUNCTION
+
 let timeEl = document.getElementById('timeNow');
 timeEl.style.fontFamily = 'IBM Plex Sans';
 
@@ -112,3 +114,22 @@ hamburger.onclick = () => {
   }
 
 }
+
+
+// CONTACT ME FUNCTION
+
+const contactButton = document.getElementById('contact-me-button');
+const contactBar = document.getElementById('contact');
+
+
+contactButton.onclick = () => {
+
+  contactBar.classList.toggle('open');
+  main.onclick = () => {
+
+    if(document.getElementsByClassName('open')) {
+      
+      contactBar.classList.remove('open');
+    }
+  }
+};

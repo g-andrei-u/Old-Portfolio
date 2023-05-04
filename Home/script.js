@@ -76,6 +76,22 @@ const expand3 = () => {
   }
 }
 
+const expand4 = () => {
+
+  if (state === false) {
+
+    projects[3].style.display = 'block'
+    arrow[3].style.transform = 'rotate(0.5turn)';
+    state = true
+  }
+  else {
+
+    projects[3].style.display = 'none'
+    arrow[3].style.transform = 'rotate(0.0turn)';
+    state = false
+  }
+}
+
 
 // HAMBURGER
 
@@ -132,4 +148,29 @@ contactButton.onclick = () => {
       contactBar.classList.remove('open');
     }
   }
+};
+
+
+// ANIMATION
+
+const onClickBar = document.getElementsByClassName('onclickbar');
+const aboutMe = document.getElementById('about_me');
+const photo = document.getElementById('portrait')
+
+
+const observer = new IntersectionObserver((entries) => {
+
+  entries.forEach((entrie) => {
+    
+    if(entrie.isIntersecting) {
+
+      entrie.target.classList.add('animation');
+    }
+  });
+});
+
+for(let el = 0; el < onClickBar.length; el++) {
+  observer.observe(onClickBar[el]);
+  observer.observe(aboutMe);
+  observer.observe(photo);
 };

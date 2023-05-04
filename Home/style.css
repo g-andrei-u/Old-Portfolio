@@ -137,7 +137,16 @@ main {
     margin-right: 100px;
     margin-left: 120px;
     margin-bottom: 200px;
+    transform: translatex(-100%);
+    opacity: 0;
 }
+
+#about_me.animation {
+    transform: translatex(0%);
+    transition: all 500ms;
+    opacity: 1;
+}
+
 
 #portrait {
     grid-column-start: 2;
@@ -148,6 +157,14 @@ main {
     justify-content: center;
     align-items: center;
     height: 80%;
+    transform: translatex(100%);
+    opacity: 0;
+}
+
+#portrait.animation {
+    transform: translatex(0%);
+    transition: all 500ms;
+    opacity: 1;
 }
 
 #portrait img {
@@ -215,7 +232,7 @@ button:hover {
     transition: border 200ms;
 }
 
-.onclick {
+.onclickbar {
     width: 100%; 
     text-align: center;
     background-color: black;
@@ -223,19 +240,26 @@ button:hover {
     border-radius: 25px;
     margin-bottom: 5px;
     color: #FFFFBE;
+    transform: translatex(-100%);
 }
 
-.onclick h3 {
+.onclickbar.animation {
+    transform: translatex(0%);
+    transition: 400ms;
+}
+
+
+.onclickbar h3 {
     font-family: 'IBM Plex Sans', sans-serif;
     word-spacing: 4px;
     margin: 0; 
     display: inline;
 }
 
-.onclick:hover {
+.onclickbar:hover {
     cursor: pointer;
     color: #1A25A4;
-    transition: color 500ms;
+    transition: 200ms;
     background-color: white;
     border: 4px solid #1A25A4;
     transition: background-color 600ms ease-in;

@@ -354,8 +354,15 @@ button:hover {
     transition: border 100ms;
 }
 
-.mail {
+#mail {
     font-size: 15px;
+}
+
+#mail:hover {
+    cursor: pointer;
+    text-decoration: underline;
+    transition: color 300ms ease-in;
+    color: white;
 }
 
 
@@ -377,6 +384,10 @@ button:hover {
 
     #portrait img {
         margin-top: 20px;
+    }
+
+    #mail {
+        font-size: 10px;
     }
 }
 
@@ -517,7 +528,7 @@ button:hover {
         box-shadow: 0 0 0 10000px rgba(0,0,0,.50);
     }
 
-    .mail {
+    #mail {
         font-size: 9px;
     }
 }

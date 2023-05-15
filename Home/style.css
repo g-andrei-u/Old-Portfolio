@@ -354,6 +354,10 @@ button:hover {
     transition: border 100ms;
 }
 
+.mail {
+    font-size: 15px;
+}
+
 
 /* DIMENSIONS */
 
@@ -511,6 +515,10 @@ button:hover {
 
     #contact.open {
         box-shadow: 0 0 0 10000px rgba(0,0,0,.50);
+    }
+
+    .mail {
+        font-size: 9px;
     }
 }
 

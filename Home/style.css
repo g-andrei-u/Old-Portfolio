@@ -4,6 +4,14 @@ html {
     font-size: 100%;
 }
 
+body::-webkit-scrollbar {
+    width: 1px;
+}
+   
+body::-webkit-scrollbar-thumb {
+    background-color: #1A25A4;
+}
+
 body {
     background-color: black;
 }
@@ -305,6 +313,15 @@ button:hover {
 .skillsIMG {
     width: 1.7rem;
     height: 1.7rem;
+}
+
+.other-skills {
+    font-size: 25px;
+    font-weight: 600;
+    font-family: 'Roboto Slab', serif;
+    margin-left: 70px;
+    margin-top: 50px;
+    color: #1A25A4;
 }
 
 

@@ -92,6 +92,22 @@ const expand4 = () => {
   }
 }
 
+const expand5 = () => {
+
+  if (state === false) {
+
+    projects[4].style.display = 'block'
+    arrow[4].style.transform = 'rotate(0.5turn)';
+    state = true
+  }
+  else {
+
+    projects[4].style.display = 'none'
+    arrow[4].style.transform = 'rotate(0.0turn)';
+    state = false
+  }
+}
+
 
 // HAMBURGER
 
